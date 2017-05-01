@@ -1,0 +1,14 @@
+dist/
+node_modules/
+npm-debug.log
+.idea
+*.iml
+*.class
+*.jar
+*.war
+target
+.project
+.classpath
+.settings/
+node/
+logs/

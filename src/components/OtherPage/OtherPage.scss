@@ -1,0 +1,33 @@
+@import "src/styles/variables.scss";
+
+.home{
+	background-color: $app-color-bleu;
+}
+
+@media (min-width: 768px) {
+
+  .input-control {
+    border-style: solid;
+    border-width: 1px;
+    border-color: $app-color-bleu;
+    border-radius: 3px;
+    background-color: $app-color-blanc;
+    font-family: $app-font-Medium;
+    color: $app-color-noir;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .input-control {
+    border-style: solid;
+    border-width: 1px;
+    border-color: $app-color-bleu;
+    border-radius: 3px;
+    background-color: $app-color-blanc;
+    font-family: $app-font-Medium;
+    color: $app-color-noir;
+  }
+
+}

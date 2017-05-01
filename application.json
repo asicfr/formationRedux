@@ -1,0 +1,8 @@
+{
+  "backend": {
+    "endpoint": {
+      "external": "https://httpbin.org",
+      "internal": "https://httpbin.org"
+    }
+  }
+}

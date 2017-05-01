@@ -1,0 +1,8 @@
+{
+  apps : [{
+    name       : "test2",
+    script     : "./bin/start.js",
+    instances  : 'max',
+    exec_mode  : "cluster"
+  }]
+}
