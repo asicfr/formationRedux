@@ -1,4 +1,5 @@
 import { connect } from 'react-redux';
+import { formActionCreator, formCptActionCreator } from 'actions';
 import OtherPage from './OtherPage.jsx';
 
 /**
@@ -8,11 +9,19 @@ import OtherPage from './OtherPage.jsx';
 
 // On map sur les props les donnees nécessaires au composant
 const mapStateToProps = (state) => {
-	const { errors } = state;
-  return { errors };
+	const { errors, form } = state;
+  return { errors, form };
 };
 
 // On map sur les props des fonctions nécessaires au composant
-const mapDispatchToProps = dispatch => ({ dispatch });
+const mapDispatchToProps = (dispatch) => {
+	return {
+		formSave: (name, value) => {
+      dispatch(formActionCreator(name, value));
+      dispatch(formCptActionCreator());
+    },
+		dispatch
+	};
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(OtherPage);

@@ -46,7 +46,7 @@ class HomePage extends Component {
       <div className="home">
         <Grid>
           <Row className="show-grid">
-            <Header title="Home page" />
+            <Header title="Home page" cpt={this.props.form.cpt} />
           </Row>
           <Row className="show-grid">
             <Button onClick={this.myfunction} id="hpButton1">

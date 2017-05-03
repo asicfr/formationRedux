@@ -9,7 +9,8 @@ import HomePage from './HomePage.jsx';
 // On map sur les props les donnees nécessaires au composant
 const mapStateToProps = (state) => {
 	const { data } = state.example;
-  return { data };
+	const { form } = state;
+  return { data, form };
 };
 
 // On map sur les props des fonctions nécessaires au composant

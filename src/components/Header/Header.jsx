@@ -6,12 +6,12 @@ import { Navbar } from 'react-bootstrap';
  * @param {any} { title } 
  * @returns Header render
  */
-const Header = ({ title }) => (
+const Header = ({ title, cpt }) => (
   <div>
     <Navbar>
       <Navbar.Header>
         <Navbar.Brand>
-          {title}
+          {title} : {cpt}
         </Navbar.Brand>
       </Navbar.Header>
     </Navbar>

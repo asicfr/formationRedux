@@ -2,6 +2,7 @@ import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
 import initialReducer from './initialReducer/initialReducer';
 import exampleReducer from './exampleReducer/exampleReducer';
+import formReducer from './formReducer/formReducer';
 
 /**
  * Mise en commun de l'ensemble des reducers
@@ -10,5 +11,6 @@ import exampleReducer from './exampleReducer/exampleReducer';
 export default combineReducers({
   routing : routerReducer,
   contextGlobal : initialReducer,
-  example : exampleReducer
+  example : exampleReducer,
+  form : formReducer
 });
